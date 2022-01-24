@@ -11,6 +11,7 @@ This course will teach you foundations of deep learning and TensorFlow as well a
 * 🤔 Got questions about the course? Check out the [livestream Q&A for the course launch](https://youtu.be/rqAqcFcfeK8)
 
 ## Contents of this page
+- [Fixes and updates](https://github.com/mrdbourke/tensorflow-deep-learning#fixes-and-updates)
 - [Course materials](https://github.com/mrdbourke/tensorflow-deep-learning#course-materials) (everything you'll need for completing the course)
 - [Course structure](https://github.com/mrdbourke/tensorflow-deep-learning#course-structure) (how this course is taught)
 - [Should you do this course?](https://github.com/mrdbourke/tensorflow-deep-learning#should-you-do-this-course) (decide by answering a couple simple questions)
@@ -19,6 +20,11 @@ This course will teach you foundations of deep learning and TensorFlow as well a
 - [Ask a question](https://github.com/mrdbourke/tensorflow-deep-learning#ask-questions) (like to know more? go here)
 - [Status](https://github.com/mrdbourke/tensorflow-deep-learning#status)
 - [Log](https://github.com/mrdbourke/tensorflow-deep-learning#log) (updates, changes and progress)
+
+## Fixes and updates 
+* 02 Dec 2021 - Added fix for TensorFlow 2.7.0+ for notebook 02, [see discussion for more](https://github.com/mrdbourke/tensorflow-deep-learning/discussions/278)
+* 11 Nov 2021 - Added fix for TensorFlow 2.7.0+ for notebook 01,  [see discussion for more](https://github.com/mrdbourke/tensorflow-deep-learning/discussions/256)
+* 14 Aug 2021 - Added a [discussion with TensorFlow 2.6 updates and EfficientNetV2 notes](https://github.com/mrdbourke/tensorflow-deep-learning/discussions/166) 
 
 ## Course materials
 
@@ -239,6 +245,7 @@ You can find solutions to the exercises in [`extras/solutions/`](https://github.
   * A graph showing the f1-scores of each class.
   * A visualization of the model making predictions on various images and comparing the predictions to the ground truth.
     * For example, plot a sample image from the test dataset and have the title of the plot show the prediction, the prediction probability and the ground truth label. 
+  * **Note:** To compare predicted labels to test labels, it might be a good idea when loading the test data to set `shuffle=False` (so the ordering of test data is preserved alongside the order of predicted labels).
 2. Take 3 of your own photos of food and use the Food Vision model to make predictions on them. How does it go? Share your images/predictions with the other students.
 3. Retrain the model (feature extraction and fine-tuning) we trained in this notebook, except this time use [`EfficientNetB4`](https://www.tensorflow.org/api_docs/python/tf/keras/applications/EfficientNetB4) as the base model instead of `EfficientNetB0`. Do you notice an improvement in performance? Does it take longer to train? Are there any tradeoffs to consider?
 4. Name one important benefit of mixed precision training, how does this benefit take place?
@@ -414,13 +421,16 @@ Contact [Daniel Bourke](mailto:daniel@mrdbourke.com) or [add a discussion](https
 
 ## Status
 
-As of: 17 Jul 2021
+As of: 14 Aug 2021
 
 Course completed! 🕺
 
 Any further updates/changes will be added below. 
   
 ## Log
+* 02 Dec 2021 - add fix for TensorFlow 2.7 to notebook 02
+* 11 Nov 2021 - add fix for TensorFlow 2.7 to notebook 01
+* 14 Aug 2021 - added a discussion with TensorFlow 2.6 updates and EfficientNetV2 notes: https://github.com/mrdbourke/tensorflow-deep-learning/discussions/166
 * 16 Jul 2021 - added 35 videos to ZTM Academy + Udemy versions of the course for time series and how to pass TensorFlow Developer Certificaiton
 * 10 Jul 2021 - added 29 edited time series videos to ZTM Academy + Udemy versions of the course, more to come soon
 * 07 Jul 2021 - recorded 5 videos for passing TensorFlow Developer Certification exam section - ALL VIDEOS FOR COURSE DONE!!! time to edit/upload! 🎉
