@@ -29,3 +29,6 @@ __MACOSX/10_food_classes_all_data/train/._chicken_wings
 __MACOSX/10_food_classes_all_data/train/._fried_rice
 __MACOSX/10_food_classes_all_data/train/._grilled_salmon
 __MACOSX/10_food_classes_all_data/train/._hamburger
+*.pb
+*.data-00000-of-00001
+*.index
