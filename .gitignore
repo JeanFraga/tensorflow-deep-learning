@@ -32,3 +32,12 @@ __MACOSX/10_food_classes_all_data/train/._hamburger
 *.pb
 *.data-00000-of-00001
 *.index
+.idea/vcs.xml
+.idea/vcs.xml
+*.iml
+*.xml
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/tensorflow-deep-learning.iml
+.idea/vcs.xml
