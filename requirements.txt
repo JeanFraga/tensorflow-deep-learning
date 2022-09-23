@@ -1,0 +1,9 @@
+tb-nightly==2.11.0a20220918
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit @ file:///build/python-tensorboard_plugin_wit/src/tensorboard_plugin_wit-1.8.1/wit-pip/release/dist/tensorboard_plugin_wit-1.8.1-py3-none-any.whl
+tensorflow-datasets==4.6.0
+tensorflow-estimator==2.9.0
+tensorflow-hub==0.12.0
+tensorflow-io-gcs-filesystem==0.26.0
+tensorflow-metadata==1.10.0
+
