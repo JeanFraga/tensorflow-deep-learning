@@ -1,0 +1,8 @@
+pandas
+matplotlib
+seaborn
+scikit-learn
+tensorflow-hub
+tensorflow-datasets
+tensorflow-text
+ipykernel
