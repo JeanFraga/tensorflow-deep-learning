@@ -1,6 +1,14 @@
-FROM tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:2.7.4-gpu
 
-# RUN apt-get update && apt-get install -y wget unzip  && apt-get clean
+RUN apt-get update && apt-get install -y curl wget unzip git && apt-get clean
+
+# install python packages from requirements.txt
+COPY requirements.txt /tmp/requirements.txt
+
+RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
+
+# download spaCy models
+RUN python -m spacy download en_core_web_lg
 
 # # USER root
     

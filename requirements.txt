@@ -6,3 +6,4 @@ tensorflow-hub
 tensorflow-datasets
 tensorflow-text
 ipykernel
+spacy
