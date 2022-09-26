@@ -1,11 +1,19 @@
-FROM tensorflow/tensorflow:2.7.4-gpu
+FROM tensorflow/tensorflow:latest-gpu
 
-RUN apt-get update && apt-get install -y curl wget unzip git && apt-get clean
+RUN apt-get update && apt-get install -y curl wget unzip \
+    # tensorrt uff-converter-tf git onnx-graphsurgeon \
+    && apt-get clean
+
+RUN pip install --upgrade setuptools pip
+
+RUN pip install nvidia-pyindex
+
+RUN apt-get install
 
 # install python packages from requirements.txt
 COPY requirements.txt /tmp/requirements.txt
 
-RUN pip install --upgrade pip && pip install -r /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt
 
 # download spaCy models
 RUN python -m spacy download en_core_web_lg
