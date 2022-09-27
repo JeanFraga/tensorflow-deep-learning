@@ -1,6 +1,6 @@
 FROM tensorflow/tensorflow:latest-gpu
 
-RUN apt-get update && apt-get install -y curl wget unzip \
+RUN apt-get update && apt-get install -y curl wget unzip git \
     # tensorrt uff-converter-tf git onnx-graphsurgeon \
     && apt-get clean
 
