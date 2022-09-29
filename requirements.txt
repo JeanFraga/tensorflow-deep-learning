@@ -1,5 +1,7 @@
 pandas
 matplotlib
+pydot
+graphviz
 seaborn
 scikit-learn
 --extra-index-url https://pypi.ngc.nvidia.com

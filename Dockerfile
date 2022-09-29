@@ -1,6 +1,6 @@
-FROM tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:2.7.0-gpu
 
-RUN apt-get update && apt-get install -y curl wget unzip git \
+RUN apt-get update && apt-get install -y wget unzip git \
     # tensorrt uff-converter-tf git onnx-graphsurgeon \
     && apt-get clean
 
